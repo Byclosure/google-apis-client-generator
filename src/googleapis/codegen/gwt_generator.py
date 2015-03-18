@@ -29,7 +29,7 @@ class GwtGenerator(java_generator.BaseJavaGenerator):
     super(GwtGenerator, self).__init__(discovery, 'gwt',
                                        GwtLanguageModel(options=options),
                                        options=options)
-    self.api.module.SetPath('%s/shared' % self.api.values['name'])
+    self.api.module.SetPath('%s' % self.api.values['name'])
 
   def _InnerModelClassesSupported(self):
     """Gets whether or not inner model classes are supported."""
